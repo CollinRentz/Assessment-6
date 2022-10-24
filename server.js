@@ -26,7 +26,6 @@ var rollbar = new Rollbar({
 
 rollbar.log('Hello world!')
 
-//..
 
 app.get('/api/robots', (req, res) => {
     try {
