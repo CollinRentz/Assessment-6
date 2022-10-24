@@ -17,16 +17,19 @@ test('Title shows up when page loads', async () => {
     const title = await driver.findElement(By.id('title'))
     const displayed = await title.isDisplayed()
     expect(displayed).toBe(true)
+    await driver.sleep(2000)
 })
 
 test('Wins show up when page loads', async () => {
     const wins = await driver.findElement(By.id('wins'))
     const displayed = await wins.isDisplayed()
     expect(displayed).toBe(true)
+    await driver.sleep(2000)
 })
 
 test('Losses show up when page loads', async () => {
     const losses = await driver.findElement(By.id('losses'))
     const displayed = await losses.isDisplayed()
     expect(displayed).toBe(true)
+    await driver.sleep(2000)
 })
