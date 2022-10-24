@@ -9,8 +9,8 @@ const {getIndex} = require('./controller')
 const getRollbar = require('./controller')
 
 app.get('/', getHTML)
-app.get('/', getCSS)
-app.get('/', getIndex)
+app.get('/css', getCSS)
+app.get('/js', getIndex)
 
 app.use(express.json())
 app.use(express.static('public'))
