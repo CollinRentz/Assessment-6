@@ -6,8 +6,8 @@ describe('shuffleArray', () => {
     }
  )})
 
- describe('shuffleArray', () => {
-    test('shuffleArray should', () => {
+describe('shuffleArray', () => {
+    test('should be the same items in the array', () => {
         expect(shuffleArray).toEqual('array')
     }
 )})
