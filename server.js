@@ -19,7 +19,7 @@ app.get('/rollbar', getRollbar)
 
 var Rollbar = require('rollbar')
 var rollbar = new Rollbar({
-  accessToken: 'b4b5abec98654e90a1b67477eafd3957',
+  accessToken: '1f9cb48b5f684605b4ec2007aa00f200',
   captureUncaught: true,
   captureUnhandledRejections: true,
 })
