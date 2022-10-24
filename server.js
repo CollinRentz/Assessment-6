@@ -3,10 +3,12 @@ const path = require('path')
 const app = express()
 const {bots, playerRecord} = require('./data')
 const {shuffleArray} = require('./utils')
-const {getHTML} = require('./controller')
-const {getCSS} = require('./controller')
-const {getIndex} = require('./controller')
-const getRollbar = require('./controller')
+
+const {getHTML,
+    getCSS,
+    getIndex,
+    getRollbar}
+ = require('./controller')
 
 app.use(express.json())
 app.use(express.static('public'))
